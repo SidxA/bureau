@@ -69,3 +69,53 @@ need some good hosting plan and interaction with local database
 - there is multi-modality, but the focus is on text-llm for now
 - structured content requires structured reading
 - ocr - extract words and positions from document
+
+
+# project roadmap
+
+the project is aimed at 'mid-threshold hardware' and full open source implementation
+
+1. 'external' tool execution pipeline / agent
+2. structured content extraction model finetuning
+3. pipeline to frontend for testing deployment
+
+1. 'external' tool execution pipeline / agent
+   - the goal of content understanding of bureaucratic forms is so involved, there is no way without automatized code generation and pseudo-self supervision, might aswell do it from the start
+   - code generation, execution and logging is supervised and validated externally
+   - this creates the need for a baseline agent class built on an instruct llm
+   - the baseline class requires a 'narrow goal script generation' action, including validation steps
+   - the external agent is not aimed at beeing aware of its own action history
+   - the action performance logging should go into a logging dump
+   - an idling action should be to archive the logging dump
+   - the external pipeline needs an action-execution-mechanic freeing all ressources for the individual tasks
+   - implementation is aimed at something like langchain or open interpreter
+   - first versions should run on colab t4
+   - aim is to build subsequent agent versions with more actions:
+       - web based research
+       - model finetuning
+       - web scraping for bureaucratic forms
+       - pseudo labelling of these using GPT4 vision
+       - model inference run
+       - testing suite built on model inference run
+    - using this external validation pipeline with a version control, the goal is to fine-tune a model for bureaucratic form content understanding
+    - bureaucratic form content understanding is mainly tied to understanding the form structure
+    - this is going to be computationally expensive
+    - its all going to be in python
+    - version control unclear: git/packages/libraries
+    - reliable translation framework required
+2. structured content extraction model finetuning
+   - bureaucratic forms are highly ordered
+   - aim is to understand this structure based on ordered/nested classes
+       - department/correspondence
+       - header, optional subheader(s)
+       - sections structure with (sub)headers
+       - cross/tick structure
+       - text structure
+       - indentation structure within text
+       - additional information structure such as page layout info
+       - table structure
+       - often, structures arise in a (nested) key-value structure
+3. pipeline to frontend for testing deployment
+   - two aims using content structure extraction
+       - creating personal bureaucratic database entry from scans
+       - assisting in filling out empty forms
