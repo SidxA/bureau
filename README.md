@@ -1,7 +1,7 @@
-# bureau, theory
+# project aim
+- pdf comprehension backend to build personal bureauccatic database
 
-## project aim
-pdf comprehension to build personal bureauccatic database
+# theory
 
 ## principles and mechanics
 
@@ -40,12 +40,10 @@ need some good hosting plan and interaction with local database
 
 # practice
 
-## aim
-
 - proof of concept of text extraction from scanned documents
-- german language
-- layoutlm
-
+- german language, needs a translation pipeline
+- first steps are testing out the different versions of [layoutlm}(https://github.com/microsoft/unilm/blob/master/layoutlmv3/README.md) and [donut](https://github.com/clovaai/donut) on a couple of test documents
+  
 ## ressources
 - [gptchat powered online research](https://github.com/assafelovic/gpt-researcher)
 - [usefull api list](https://github.com/public-apis/public-apis)
