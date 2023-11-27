@@ -7,7 +7,11 @@ pdf comprehension backend to build personal bureaucratic database
 - german language, needs a translation pipeline
 - first steps are testing out the different versions of [layoutlm](https://github.com/microsoft/unilm/blob/master/layoutlmv3/README.md) (utilizing OCR optical character recognition intermediate step) and [donut](https://github.com/clovaai/donut) (just image based) on a couple of test documents
 - hardware and backend/frontend combination is easy using huggingface such as in [this example](https://www.youtube.com/watch?v=6b3S2D2TiAo), but very picy to experiment
-- approach is colab T4 / local hosting for now
+- next step: find a hosting solution for layoutlm, might be possible just locally?, approach is colab T4?
+
+examples
+- layoutlm with huggingface,streamlit,pytorch: [colab](https://colab.research.google.com/drive/1I0Qyajp_DFzKvQfUwwRc9p6fs6NfI-Kx?usp=sharing), [extensive](https://www.mlexpert.io/machine-learning/tutorials/document-classification-with-layoutlmv3)
+- 
 
 ## outlook
 
