@@ -1,5 +1,5 @@
 # project aim
-- pdf comprehension backend to build personal bureauccatic database
+pdf comprehension backend to build personal bureauccatic database
 
 # theory
 
@@ -42,7 +42,7 @@ need some good hosting plan and interaction with local database
 
 - proof of concept of text extraction from scanned documents
 - german language, needs a translation pipeline
-- first steps are testing out the different versions of [layoutlm}(https://github.com/microsoft/unilm/blob/master/layoutlmv3/README.md) and [donut](https://github.com/clovaai/donut) on a couple of test documents
+- first steps are testing out the different versions of [layoutlm](https://github.com/microsoft/unilm/blob/master/layoutlmv3/README.md) and [donut](https://github.com/clovaai/donut) on a couple of test documents
   
 ## ressources
 - [gptchat powered online research](https://github.com/assafelovic/gpt-researcher)
