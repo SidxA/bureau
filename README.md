@@ -1,5 +1,5 @@
 # project aim
-pdf comprehension backend to build personal bureauccatic database
+pdf comprehension backend to build personal bureaucratic database
 
 # situation
 
@@ -52,7 +52,7 @@ for the tool to be applicable in regards to privacy
 need some good hosting plan and interaction with local database
 ### database system
 
-- can be first a secure database with essential bureaucratic information, which ties to hardware
+- can be first a secure database (eg. [supabase}(https://github.com/supabase/supabase)) with essential bureaucratic information, which ties to hardware
 - has a meta-knowledge obligation, ie. feedback of content and categorization
 - llm hybrid-query and rag accessing
 - different parallel categorical systems (better then nested?, both limited)
