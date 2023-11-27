@@ -6,6 +6,8 @@ pdf comprehension backend to build personal bureaucratic database
 - proof of concept of text extraction from scanned documents
 - german language, needs a translation pipeline
 - first steps are testing out the different versions of [layoutlm](https://github.com/microsoft/unilm/blob/master/layoutlmv3/README.md) (utilizing OCR optical character recognition intermediate step) and [donut](https://github.com/clovaai/donut) (just image based) on a couple of test documents
+- hardware and backend/frontend combination is easy using huggingface such as in [this example](https://www.youtube.com/watch?v=6b3S2D2TiAo), but very picy to experiment
+- approach is colab T4 / local hosting for now
 
 ## outlook
 
