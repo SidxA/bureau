@@ -60,7 +60,7 @@ the project is aimed at 'mid-threshold hardware' and full open source implementa
 
 database system
 
-- can be first a secure database (eg. [supabase}(https://github.com/supabase/supabase)) with essential bureaucratic information, which ties to hardware
+- can be first a secure database (eg. [supabase](https://github.com/supabase/supabase)) with essential bureaucratic information, which ties to hardware
 - has a meta-knowledge obligation, ie. feedback of content and categorization
 - llm hybrid-query and rag accessing
 - different parallel categorical systems (better then nested?, both limited)
