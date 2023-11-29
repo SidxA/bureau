@@ -57,6 +57,19 @@
 - **Tesseract with Language Packs**: Supports multiple languages.
 - **EasyOCR**: User-friendly and supports over 60 languages.
 
+# Algorithms for OCR Output Processing in JSON Format
+
+## Confidence Score Selection
+- **Algorithm**: Choose text with the highest OCR confidence scores.
+- **Python Libraries**: `json` for loading data, `pandas` or `numpy` for data analysis.
+
+## Cross-Tool Validation
+- **Algorithm**: Compare and validate OCR results from different tools.
+- **Python Libraries**: `python-levenshtein` for measuring text similarity.
+
+## Majority Voting
+- **Algorithm**: Select the most common OCR result from multiple outputs.
+- **Python Libraries**: Use `collections.Counter` for result tallying.
 
 
 # project aim
