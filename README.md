@@ -1,3 +1,45 @@
+# Hierarchical Document and Form Comprehension Strategy
+
+## Hierarchical Structure
+
+### Document Level
+- **Type**: Form, letter, invoice, report, etc.
+- **Metadata**: Title, author, date, document ID.
+
+### Section Level
+- **Major Sections**: Header, footer, main content, sidebars.
+- **Subsections**: Introduction, conclusion, abstract, etc.
+
+### Content Level
+- **Textual Elements**: Paragraphs, headings, subheadings.
+- **Lists**: Bullet points, numbered lists.
+- **Tables**: Headers, rows, columns.
+- **Form Elements**: TextRuns, Widgets, Text Fields, Choice Groups.
+- **Visual Elements**: Images, figures, graphs.
+
+## Data Prediction Format
+- **JSON Structure**: Nested JSON objects for each level, with metadata, content, and children.
+
+## Multi-Page Strategy
+- **Page-wise Segmentation**: Each page as a separate entity.
+- **Cross-Page Linking**: Connect related elements across pages.
+- **Metadata Consistency**: Across pages for multi-page documents.
+
+## Implementation
+
+### Machine Learning Models
+- **Specialized Models**: Different models for text, images, structure.
+- **Training**: On respective hierarchical levels.
+
+### Human Validation and Feedback Loop
+- **Review and Correction**: Of machine-generated labels.
+- **Model Refinement**: Based on feedback.
+
+### Tool Integration
+- **Layout Parser**: For image analysis.
+- **Custom Models**: For text and structure analysis.
+
+
 # project aim
 pdf comprehension backend to build personal bureaucratic database
 
