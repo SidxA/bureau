@@ -39,6 +39,25 @@
 - **Layout Parser**: For image analysis.
 - **Custom Models**: For text and structure analysis.
 
+# Prominent Python OCR Tools
+
+## Standard OCR
+- **Tesseract**: An open-source OCR engine.
+- **Pytesseract**: Python wrapper for Tesseract.
+
+## Advanced OCR
+- **ABBYY FineReader**: Known for high accuracy in complex layouts.
+- **Google Cloud Vision API**: Offers powerful image analysis.
+
+## Handwriting Recognition
+- **Microsoft Azure Computer Vision**: Good for handwriting and print.
+- **Google Cloud Vision API**: Also handles handwriting effectively.
+
+## Language-Specific OCR
+- **Tesseract with Language Packs**: Supports multiple languages.
+- **EasyOCR**: User-friendly and supports over 60 languages.
+
+
 
 # project aim
 pdf comprehension backend to build personal bureaucratic database
