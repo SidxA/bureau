@@ -1,3 +1,36 @@
+Establishing detailed rules and algorithms:
+
+1. **Positional Rules**:
+   - Algorithm: Analyze coordinates of each block.
+   - Rules: Header at top, footer at bottom, main content in center.
+
+2. **Size and Shape Rules**:
+   - Algorithm: Measure dimensions and aspect ratios.
+   - Rules: Small squares as checkboxes, long rectangles as text fields.
+
+3. **Text Pattern Rules**:
+   - Algorithm: Regular Expression (Regex) matching.
+   - Rules: Date formats (dd/mm/yyyy), identification numbers.
+
+4. **Adjacency Rules**:
+   - Algorithm: Spatial relation analysis.
+   - Rules: Captions under images, labels next to fields.
+
+5. **Color and Font Rules**:
+   - Algorithm: Color detection, font style analysis.
+   - Rules: Blue text for links, bold fonts for headers.
+
+6. **Contextual Analysis**:
+   - Algorithm: Natural Language Processing (NLP) for context understanding.
+   - Rules: Contextual clues to differentiate similar-looking elements.
+
+7. **Feedback Mechanism**:
+   - Algorithm: Machine learning model updates based on user corrections.
+   - Rules: Adjust rule parameters based on error patterns observed.
+
+Testing and validation are crucial for refining these rules and algorithms.
+
+
 # Enhanced Document Processing Pipeline
 
 ## Overview
