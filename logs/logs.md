@@ -14,9 +14,24 @@
 
 -software
 go with recent python 3.11 and CUDA 12.1 and therefore relatively new pytorch
+nope its python 3.10
 
 -aim
 create database of pdf's
 test OCR pdf to txt conversion
 set up a database pipeline for this conversion
 put this into a function
+
+24/04/09
+
+-decided to just try DSPy with EXL2 mixtral model on tabbyAPI
+-
+
+-todo
+motherboard fan settings, maybe just put full fans when above 35°
+gpu power downplay to about 250W
+bios check pcie slots configuration (nvtop says theyre only 1@16x)
+
+PCIe Configuration: Navigate to the "Advanced" tab or similar. Look for settings related to PCIe/PCI Configuration. Ensure PCIe slots are set to operate at the maximum supported generation (e.g., Gen 4 or Gen 5 for your RTX 3090s). If you see options like "PCIe Slot Configuration," set it to "Gen4" or "Gen5" according to your GPUs' capabilities.
+Above 4G Decoding/C.A.M.: Ensure "Above 4G Decoding" or "4G Decoding" and "Resizable BAR Support" are enabled. These settings allow your system to fully utilize the capabilities of your hardware, especially in configurations with high-end GPUs.
+Multi-GPU Configuration: If available, check the settings related to multi-GPU or SLI/CrossFireX configuration to ensure your motherboard is configured to support dual GPUs optimally.

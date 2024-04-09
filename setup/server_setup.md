@@ -73,3 +73,21 @@ sudo service fail2ban restart
 sudo fail2ban-client set sshd unbanip 192.168.1.100
 
 # python, cuda, pytorch
+
+#main drivers
+sudo ubuntu-drivers autoinstall
+sudo reboot
+
+#nvidia check
+nvidia-smi
+
+#cuda 12-1 via network package get
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt-get update
+sudo apt-get install cuda-toolkit-12-1
+sudo reboot
+
+sudo apt install python3-pip
+pip3 install torch torchvision torchaudio
+
