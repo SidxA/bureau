@@ -88,6 +88,30 @@ sudo apt-get update
 sudo apt-get install cuda-toolkit-12-1
 sudo reboot
 
+#mandatory post install path
+export PATH=/usr/local/cuda-12.4/bin${PATH:+:${PATH}}
+
 sudo apt install python3-pip
 pip3 install torch torchvision torchaudio
+
+#list cuda
+apt list --installed | grep cuda-toolkit
+
+#hold driver at current version
+sudo apt-mark hold nvidia-driver
+#look at it
+apt-mark showhold
+
+
+#VOLUME INCREASING
+#overview
+df -h
+#large directories
+sudo du -hx / | sort -rh | head -10
+#large files
+sudo find / -type f -size +100M -exec ls -lh {} \;
+#logical volume
+sudo lvextend -L+1024G /dev/mapper/ubuntu--vg-ubuntu--lv
+#resize filesystem
+sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 

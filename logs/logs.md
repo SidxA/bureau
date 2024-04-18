@@ -35,3 +35,21 @@ bios check pcie slots configuration (nvtop says theyre only 1@16x)
 PCIe Configuration: Navigate to the "Advanced" tab or similar. Look for settings related to PCIe/PCI Configuration. Ensure PCIe slots are set to operate at the maximum supported generation (e.g., Gen 4 or Gen 5 for your RTX 3090s). If you see options like "PCIe Slot Configuration," set it to "Gen4" or "Gen5" according to your GPUs' capabilities.
 Above 4G Decoding/C.A.M.: Ensure "Above 4G Decoding" or "4G Decoding" and "Resizable BAR Support" are enabled. These settings allow your system to fully utilize the capabilities of your hardware, especially in configurations with high-end GPUs.
 Multi-GPU Configuration: If available, check the settings related to multi-GPU or SLI/CrossFireX configuration to ensure your motherboard is configured to support dual GPUs optimally.
+
+24/04/17
+dspy
+
+-set up server anew
+-cuda keyring authentification still yields unknown apt source
+-tabbyAPI install works with the manual pip build (saying 12-1 cuda when 12-4 is installed)
+-downloading some deekseep v1.5 exl2 quant coder instruct
+-huggingface-hub works for the model downloads
+-tabbyAPI gradio loader can access the local tabbyAPI server
+-the chat completions doent work yet, and neither does a dspy loader
+
+24/04/18
+
+-now it works with a custom loader class, dspy chain of thought
+-need to keep in mind: max tokens and temperature
+-now we want to have an overview table with general purpose and coding models
+(templates + ctxt length)
